@@ -6,6 +6,8 @@
   Download the latest frida-server for Android from `https://github.com/frida/frida/releases`  
   Doc `https://frida.re/docs/android/`
 - frida-tools （PC）
+- Reqable (Android)
+  `https://reqable.com/`
 ```bash
 pip install frida-tools
 ```
