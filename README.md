@@ -6,11 +6,12 @@
   Download the latest frida-server for Android from `https://github.com/frida/frida/releases`  
   Doc `https://frida.re/docs/android/`
 - frida-tools （PC）
+  `pip install frida-tools`
 - Reqable (Android)
   `https://reqable.com/`
-```bash
-pip install frida-tools
-```
+- Mumu android emulator (PC)
+  `https://www.mumuplayer.com/`  
+
 - 查看 Android 设备的 CPU 架构 
 ```bash
 adb shell getprop ro.product.cpu.abi
@@ -40,9 +41,10 @@ $ adb shell "chmod 755 /data/local/tmp/frida-server"
 $ adb shell "/data/local/tmp/frida-server &"
 ```
 
-## Close APP and restart it use frida (PC)
+## Close X APP and restart it use frida (PC)
 ```bash
 # frida -U -f <APP_ID> -l frida_multiple_unpinning.js
+# X version 11.22.0-release.0
 frida -U -f com.twitter.android -l frida_multiple_unpinning.js
 ```
 
